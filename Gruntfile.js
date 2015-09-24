@@ -168,7 +168,7 @@ module.exports = function (grunt) {
     protractor: {
       options: {
           // Location of your protractor config file
-          configFile: "e2e/conf.js",
+          configFile: "test-e2e/protractor.config.js",
 
           // Do you want the output to use fun colors?
           noColor: false,
