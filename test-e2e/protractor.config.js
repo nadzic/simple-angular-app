@@ -1,4 +1,5 @@
 // An example configuration file.
+/* jshint ignore:start */
 exports.config = {
   directConnect: true,
 
@@ -19,3 +20,4 @@ exports.config = {
     defaultTimeoutInterval: 30000
   }
 };
+/* jshint ignore:end */
