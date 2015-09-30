@@ -1,4 +1,4 @@
-describe('ResetPasswordCtrl', function() {
+describe('PaymentListCtrl', function() {
 
 	beforeEach(module('webAppFront'));
 
@@ -6,7 +6,7 @@ describe('ResetPasswordCtrl', function() {
 
     beforeEach(inject(function($rootScope, $controller) {
       scope = $rootScope.$new();
-      ctrl = $controller('ResetPasswordCtrl', {$scope: scope});
+      ctrl = $controller('PaymentListCtrl', {$scope: scope});
     }));	
 
 	it('should ...', inject(function() {

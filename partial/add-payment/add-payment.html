@@ -1,0 +1,28 @@
+<div class="add-payment-partial">
+    <div class="add-payment-container">
+
+        <h2 class="text-center">Welcome to Add payment screen</h2>
+
+        <form ng-submit="submit()" name="payForm" id="add-paymeny-form">
+
+            <div class="form-group has-feedback lg left-feedback no-label">
+                <label>Who pays:</label>
+                <select name="user" ng-model="model.selectedUser" ng-options="user for user in model.users" >
+                    <option value="">-- Choose user --</option>
+                </select><br>
+               <!-- <div>model.user = {{model.selectedUser}}</div>-->
+                <div ng-repeat="user in model.users" class="for-whom-paid">
+
+                    <div ng-if="model.selectedUser !== user">
+
+                        <label>{{user}}</label>
+                        <input type="text" placeholder="amount in $" />
+                    </div>
+
+                </div>
+            </div>
+            <input type="submit" id="submit" value="Submit" />
+
+        </form>
+    </div>
+</div>
